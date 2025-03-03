@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 213 73% 17%;
+    --card: 0 0% 100%;
+    --card-foreground: 213 73% 17%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 213 73% 17%;
+    --primary: 21 83% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 213 73% 17%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 213 20% 95%;
+    --muted-foreground: 213 40% 40%;
+    --accent: 213 20% 90%;
+    --accent-foreground: 213 73% 17%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 213 20% 85%;
+    --input: 213 20% 85%;
+    --ring: 21 83% 55%;
+    --radius: 0.5rem;
+
+    /* Chart colors */
+    --chart-1: 21 83% 55%;
+    --chart-2: 213 73% 17%;
+    --chart-3: 21 83% 65%;
+    --chart-4: 213 50% 40%;
+    --chart-5: 0 84% 60%;
+  }
+
+  .dark {
+    --background: 213 73% 17%;
+    --foreground: 0 0% 100%;
+    --card: 213 73% 17%;
+    --card-foreground: 0 0% 100%;
+    --popover: 213 73% 17%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 21 83% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 213 50% 25%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 213 50% 25%;
+    --muted-foreground: 213 20% 80%;
+    --accent: 213 50% 25%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 213 50% 25%;
+    --input: 213 50% 25%;
+    --ring: 21 83% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.chat-bubble-user {
+  @apply bg-primary text-primary-foreground;
+}
+
+.chat-bubble-ai {
+  @apply bg-muted text-muted-foreground;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-primary to-allica-orange bg-clip-text text-transparent;
+}
+
+.allica-gradient {
+  @apply bg-gradient-to-r from-allica-blue to-allica-orange;
+}
+
