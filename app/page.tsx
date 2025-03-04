@@ -144,7 +144,7 @@ export default function Home() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="w-full sm:w-auto gap-1.5 border-white text-white hover:bg-white/10 font-medium"
+                  className="w-full sm:w-auto gap-1.5 border-white text-allica-blue hover:bg-white/90 font-medium"
                 >
                   Try the Calculator <Calculator className="h-4 w-4 ml-1" />
                 </Button>
